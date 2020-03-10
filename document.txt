@@ -1,0 +1,24 @@
+<div class="section contacts-documents">
+  <div class="container-fluid">
+    <h3 class="contacts-documents__title">Важные документы</h3>
+    <div class="contacts-documents__wrapper">
+      <?php
+      $args = array(
+        'numberposts' => -1,
+        'orderby'     => 'date',
+        'order'       => 'DESC',
+        'post_type'   => 'docs',
+        'suppress_filters' => true,
+      );
+
+      $posts = get_posts( $args );
+      foreach($posts as $post){ setup_postdata($post);
+        ?>
+        <div class="item"><a href="<?php the_field('doc-file'); ?>" download=""><?php the_title(); ?></a></a></div>
+        <?php
+      }
+      wp_reset_postdata(); // сброс
+      ?>
+    </div>
+  </div>
+</div>

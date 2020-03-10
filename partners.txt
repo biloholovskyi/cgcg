@@ -1,0 +1,27 @@
+<section class='partners'>
+    <div class='container-fluid'>
+      <div class='row'>
+        <h3>Партнеры</h3>
+      </div>
+      <div class='row'>
+        <div class='col-6 col-sm-4 col-md-2'>
+          <div class='partners__item'></div>
+        </div>
+        <div class='col-6 col-sm-4 col-md-2'>
+          <div class='partners__item'></div>
+        </div>
+        <div class='col-6 col-sm-4 col-md-2'>
+          <div class='partners__item' style="background-image: url(<?php echo get_template_directory_uri() . '/img/icon/partner-icon.jpg'; ?>);"></div>
+        </div>
+        <div class='col-6 col-sm-4 col-md-2'>
+          <div class='partners__item' style="background-image: url(<?php echo get_template_directory_uri() . '/img/icon/pravo.svg'; ?>);"></div>
+        </div>
+        <div class='col-6 col-sm-4 col-md-2'>
+          <div class='partners__item'></div>
+        </div>
+        <div class='col-6 col-sm-4 col-md-2'>
+          <div class='partners__item'></div>
+        </div>
+      </div>
+    </div>
+  </section>
